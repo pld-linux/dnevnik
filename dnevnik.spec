@@ -12,13 +12,13 @@ BuildRequires:	qt-st-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Moj Dnevnik is a simple diary that is written in C++ using the QT
+Moj Dnevnik is a simple diary that is written in C++ using the Qt
 library, so it works on Linux, *BSD, Unix, Windows, and Mac. It holds
 all data in simple text file and the GUI is in Serbian.
 
 %description -l pl
 Moj Dnevnik jest prostym pamiêtnikiem napisanym w C++ z u¿yciem
-biblioteki QT, zatem dzia³a pod Linuksem, *BSD, Uniksem, Windowsem
+biblioteki Qt, zatem dzia³a pod Linuksem, *BSD, Uniksem, Windowsem
 oraz Makiem. Wszystkie dane trzyma w prostym pliku tekstowym, a GUI
 jest po serbsku.
 
