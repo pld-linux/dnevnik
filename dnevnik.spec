@@ -2,13 +2,14 @@ Summary:	Simple diary
 Summary(pl):	Prosty pamiêtnik
 Name:		dnevnik
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.devbase.net/dnevnik/%{name}.tar.gz
 # Source0-md5:	1ceb91aa6cd8b7aad673bc04c5144247
 URL:		http://www.devbase.net/dnevnik/
-BuildRequires:	qt-st-devel
+BuildRequires:	qt-devel
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,11 +26,14 @@ jest po serbsku.
 %prep
 %setup -q -n %{name}
 
+sed -i -e 's/^\(CONFIG.*\)$/\1 thread/' dnevnik.pro
+
 %build
-qmake
+qmake \
+	QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}"
+
 %{__make} \
-	QTDIR=%{_prefix} \
-	CXXFLAGS="%{rpmcflags}"
+	QTDIR=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
