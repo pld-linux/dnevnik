@@ -8,6 +8,7 @@ Group:		X11/Applications
 Source0:	http://www.devbase.net/dnevnik/%{name}.tar.gz
 # Source0-md5:	1ceb91aa6cd8b7aad673bc04c5144247
 URL:		http://www.devbase.net/dnevnik/
+BuildRequires:	qmake
 BuildRequires:	qt-devel
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
