@@ -1,5 +1,5 @@
 Summary:	Simple diary
-Summary(pl):	Prosty pamiêtnik
+Summary(pl.UTF-8):   Prosty pamiÄ™tnik
 Name:		dnevnik
 Version:	1.0
 Release:	2
@@ -19,9 +19,9 @@ Moj Dnevnik is a simple diary that is written in C++ using the Qt
 library, so it works on Linux, *BSD, Unix, Windows, and Mac. It holds
 all data in simple text file and the GUI is in Serbian.
 
-%description -l pl
-Moj Dnevnik jest prostym pamiêtnikiem napisanym w C++ z u¿yciem
-biblioteki Qt, zatem dzia³a pod Linuksem, *BSD, Uniksem, Windowsem
+%description -l pl.UTF-8
+Moj Dnevnik jest prostym pamiÄ™tnikiem napisanym w C++ z uÅ¼yciem
+biblioteki Qt, zatem dziaÅ‚a pod Linuksem, *BSD, Uniksem, Windowsem
 oraz Makiem. Wszystkie dane trzyma w prostym pliku tekstowym, a GUI
 jest po serbsku.
 
