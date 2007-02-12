@@ -1,5 +1,5 @@
 Summary:	Simple diary
-Summary(pl.UTF-8):   Prosty pamiętnik
+Summary(pl.UTF-8):	Prosty pamiętnik
 Name:		dnevnik
 Version:	1.0
 Release:	2
